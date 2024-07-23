@@ -1,0 +1,28 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AlphaFS/2.2.6": {
+        "runtime": {
+          "lib/net452/AlphaFS.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.6.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AlphaFS/2.2.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-shpn9XCIoujKzyWUygsiLRKuua46XET6+vOtuu0CwpXtjQDybWCNp7sN8DUJRjbZf/uufy6U9gM7cm/W10JHAw==",
+      "path": "alphafs/2.2.6",
+      "hashPath": "alphafs.2.2.6.nupkg.sha512"
+    }
+  }
+}

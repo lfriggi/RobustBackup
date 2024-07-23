@@ -1,0 +1,143 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-windows7.0": {
+      "AlphaFS/2.2.6": {
+        "type": "package",
+        "compile": {
+          "lib/net452/AlphaFS.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net452/AlphaFS.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AlphaFS/2.2.6": {
+      "sha512": "shpn9XCIoujKzyWUygsiLRKuua46XET6+vOtuu0CwpXtjQDybWCNp7sN8DUJRjbZf/uufy6U9gM7cm/W10JHAw==",
+      "type": "package",
+      "path": "alphafs/2.2.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "alphafs.2.2.6.nupkg.sha512",
+        "alphafs.nuspec",
+        "lib/net35/AlphaFS.dll",
+        "lib/net35/AlphaFS.pdb",
+        "lib/net35/AlphaFS.xml",
+        "lib/net40/AlphaFS.dll",
+        "lib/net40/AlphaFS.pdb",
+        "lib/net40/AlphaFS.xml",
+        "lib/net45/AlphaFS.dll",
+        "lib/net45/AlphaFS.pdb",
+        "lib/net45/AlphaFS.xml",
+        "lib/net451/AlphaFS.dll",
+        "lib/net451/AlphaFS.pdb",
+        "lib/net451/AlphaFS.xml",
+        "lib/net452/AlphaFS.dll",
+        "lib/net452/AlphaFS.pdb",
+        "lib/net452/AlphaFS.xml"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0-windows7.0": [
+      "AlphaFS >= 2.2.6"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Lucas\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Lucas\\Desktop\\RobustBackup\\RobustBackup\\RobustBackup\\RobustBackup.csproj",
+      "projectName": "RobustBackup",
+      "projectPath": "C:\\Users\\Lucas\\Desktop\\RobustBackup\\RobustBackup\\RobustBackup\\RobustBackup.csproj",
+      "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lucas\\Desktop\\RobustBackup\\RobustBackup\\RobustBackup\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows",
+        "dependencies": {
+          "AlphaFS": {
+            "target": "Package",
+            "version": "[2.2.6, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AlphaFS 2.2.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AlphaFS",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
+}
