@@ -1,0 +1,14 @@
+C:\Users\lfriggi\source\repos\AutoReforcedBAckup\AutoReforcedBAckup\bin\Debug\AutoReforcedBAckup.exe.config
+C:\Users\lfriggi\source\repos\AutoReforcedBAckup\AutoReforcedBAckup\bin\Debug\AutoReforcedBAckup.exe
+C:\Users\lfriggi\source\repos\AutoReforcedBAckup\AutoReforcedBAckup\bin\Debug\AutoReforcedBAckup.pdb
+C:\Users\lfriggi\source\repos\AutoReforcedBAckup\AutoReforcedBAckup\obj\Debug\AutoReforcedBAckup.csproj.AssemblyReference.cache
+C:\Users\lfriggi\source\repos\AutoReforcedBAckup\AutoReforcedBAckup\obj\Debug\AutoReforcedBAckup.Form1.resources
+C:\Users\lfriggi\source\repos\AutoReforcedBAckup\AutoReforcedBAckup\obj\Debug\AutoReforcedBAckup.Properties.Resources.resources
+C:\Users\lfriggi\source\repos\AutoReforcedBAckup\AutoReforcedBAckup\obj\Debug\AutoReforcedBAckup.csproj.GenerateResource.cache
+C:\Users\lfriggi\source\repos\AutoReforcedBAckup\AutoReforcedBAckup\obj\Debug\AutoReforcedBAckup.csproj.CoreCompileInputs.cache
+C:\Users\lfriggi\source\repos\AutoReforcedBAckup\AutoReforcedBAckup\obj\Debug\AutoReforcedBAckup.exe
+C:\Users\lfriggi\source\repos\AutoReforcedBAckup\AutoReforcedBAckup\obj\Debug\AutoReforcedBAckup.pdb
+C:\Users\lfriggi\source\repos\AutoReforcedBAckup\AutoReforcedBAckup\bin\Debug\AlphaFS.dll
+C:\Users\lfriggi\source\repos\AutoReforcedBAckup\AutoReforcedBAckup\bin\Debug\AlphaFS.pdb
+C:\Users\lfriggi\source\repos\AutoReforcedBAckup\AutoReforcedBAckup\bin\Debug\AlphaFS.xml
+C:\Users\lfriggi\source\repos\AutoReforcedBAckup\AutoReforcedBAckup\obj\Debug\AutoReforcedBAckup.csproj.CopyComplete
