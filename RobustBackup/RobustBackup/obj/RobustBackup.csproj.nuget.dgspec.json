@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\RobustBackup\\RobustBackup\\RobustBackup\\RobustBackup\\RobustBackup.csproj": {}
+    "D:\\RobustBackup\\RobustBackup\\RobustBackup\\RobustBackup.csproj": {}
   },
   "projects": {
-    "D:\\RobustBackup\\RobustBackup\\RobustBackup\\RobustBackup\\RobustBackup.csproj": {
+    "D:\\RobustBackup\\RobustBackup\\RobustBackup\\RobustBackup.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RobustBackup\\RobustBackup\\RobustBackup\\RobustBackup\\RobustBackup.csproj",
+        "projectUniqueName": "D:\\RobustBackup\\RobustBackup\\RobustBackup\\RobustBackup.csproj",
         "projectName": "RobustBackup",
-        "projectPath": "D:\\RobustBackup\\RobustBackup\\RobustBackup\\RobustBackup\\RobustBackup.csproj",
+        "projectPath": "D:\\RobustBackup\\RobustBackup\\RobustBackup\\RobustBackup.csproj",
         "packagesPath": "C:\\Users\\lfriggi\\.nuget\\packages\\",
-        "outputPath": "D:\\RobustBackup\\RobustBackup\\RobustBackup\\RobustBackup\\obj\\",
+        "outputPath": "D:\\RobustBackup\\RobustBackup\\RobustBackup\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

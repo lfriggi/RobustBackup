@@ -39,6 +39,7 @@
             loadingPanel = new Panel();
             label1 = new Label();
             label2 = new Label();
+            button4 = new Button();
             loadingPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -121,11 +122,21 @@
             label2.TabIndex = 8;
             label2.Text = "Destination";
             // 
+            // button4
+            // 
+            button4.Location = new Point(713, 12);
+            button4.Name = "button4";
+            button4.Size = new Size(75, 23);
+            button4.TabIndex = 9;
+            button4.Text = "config";
+            button4.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button4);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(loadingPanel);
@@ -154,5 +165,6 @@
         private Panel loadingPanel;
         private Label label1;
         private Label label2;
+        private Button button4;
     }
 }
