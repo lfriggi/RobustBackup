@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KZYRxkwtHaU=",
+  "dgSpecHash": "cWoLn+X9NzszIahH5RPFxCtYQI3W4qzXRJOlFcAZ/Z5rU0+ejwIYyzLuaayxckPVCnCFm+MOnpYnQnIprqF1XA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lucas\\Desktop\\RobustBackup\\RobustBackup\\RobustBackup\\RobustBackup.csproj",
+  "projectFilePath": "D:\\RobustBackup\\RobustBackup\\RobustBackup\\RobustBackup\\RobustBackup.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Lucas\\.nuget\\packages\\alphafs\\2.2.6\\alphafs.2.2.6.nupkg.sha512"
+    "C:\\Users\\lfriggi\\.nuget\\packages\\alphafs\\2.2.6\\alphafs.2.2.6.nupkg.sha512"
   ],
   "logs": [
     {

@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Alphaleonis.Win32.Filesystem; // Alphaleonis namespace para operações de arquivos com caminhos longos
+using System.IO;
 
 namespace RobustBackup
 {
@@ -33,7 +34,7 @@ namespace RobustBackup
                 }
                 else
                 {
-                    textBox1.Text = "Nenhuma pasta Selecionada";
+                    textBox1.Text = "No folder selected";
                 }
             }
         }
@@ -50,11 +51,34 @@ namespace RobustBackup
                 }
                 else
                 {
-                    textBox2.Text = "Nenhuma pasta Selecionada";
+                    textBox2.Text = "No folder selected";
                 }
             }
         }
+        private void CopyDirectoryRecursively(string sourceDir, string destDir)
+        {
+            Alphaleonis.Win32.Filesystem.DirectoryInfo dir = new Alphaleonis.Win32.Filesystem.DirectoryInfo(sourceDir);
+            if (!dir.Exists)
+            {
+                throw new DirectoryNotFoundException($"Source directory is not found: {dir.FullName}");
+            }
 
+            // Copiar todos os arquivos
+            Alphaleonis.Win32.Filesystem.FileInfo[] files = dir.GetFiles();
+            foreach (Alphaleonis.Win32.Filesystem.FileInfo file in files)
+            {
+                string targetFilePath = Alphaleonis.Win32.Filesystem.Path.Combine(destDir, file.Name);
+                file.CopyTo(targetFilePath, true);
+            }
+
+            Alphaleonis.Win32.Filesystem.DirectoryInfo[] dirs = dir.GetDirectories();
+            foreach (Alphaleonis.Win32.Filesystem.DirectoryInfo subDir in dirs)
+            {
+                string newDestinationDir = Alphaleonis.Win32.Filesystem.Path.Combine(destDir, subDir.Name);
+                Alphaleonis.Win32.Filesystem.Directory.CreateDirectory(newDestinationDir);
+                CopyDirectoryRecursively(subDir.FullName, newDestinationDir);
+            }
+        }
         private void DeleteOldestFolderWithAlphaFS(string path)
         {
             try
@@ -63,7 +87,7 @@ namespace RobustBackup
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Erro ao excluir a pasta: {ex.Message}");
+                MessageBox.Show($"Error to delete folder: {ex.Message}");
             }
         }
 
@@ -76,21 +100,22 @@ namespace RobustBackup
             {
                 await Task.Run(() =>
                 {
-                    // Obter diretórios e arquivos usando Alphaleonis
-                    string[] folders = Alphaleonis.Win32.Filesystem.Directory.GetDirectories(textBox1.Text);
-                    string[] files = Alphaleonis.Win32.Filesystem.Directory.GetFiles(textBox1.Text);
+                    // Get Directories
+                    string sourcePath = textBox1.Text;
+                    string destPath = textBox2.Text;
 
                     DateTime dateTime = DateTime.Today;
                     string data = dateTime.ToString("yyyyMMdd");
 
-                    // Criar pasta com data atual
-                    string sourceFolderName = Alphaleonis.Win32.Filesystem.Path.GetFileName(textBox1.Text);
+                    // Get the source folder name
+                    string sourceFolderName = Alphaleonis.Win32.Filesystem.Path.GetFileName(sourcePath.TrimEnd(Alphaleonis.Win32.Filesystem.Path.DirectorySeparatorChar));
                     string foldername = sourceFolderName + "_" + data;
-                    string dest = Alphaleonis.Win32.Filesystem.Path.Combine(textBox2.Text, foldername);
-                    Alphaleonis.Win32.Filesystem.Directory.CreateDirectory(dest);
+                    string destFolder = Alphaleonis.Win32.Filesystem.Path.Combine(destPath, foldername);
 
-                    // Apagar a pasta mais antiga se houver mais de três
-                    string[] destinationFolders = Alphaleonis.Win32.Filesystem.Directory.GetDirectories(textBox2.Text, sourceFolderName + "_*");
+               
+                    Alphaleonis.Win32.Filesystem.Directory.CreateDirectory(destFolder);
+                    CopyDirectoryRecursively(sourcePath, destFolder);
+                    string[] destinationFolders = Alphaleonis.Win32.Filesystem.Directory.GetDirectories(destPath, sourceFolderName + "_*");
                     if (destinationFolders.Length > 2)
                     {
                         var oldestFolder = destinationFolders
@@ -100,25 +125,18 @@ namespace RobustBackup
 
                         DeleteOldestFolderWithAlphaFS(oldestFolder.FullName);
                     }
-
-                    // Copiar arquivos
-                    foreach (string file in files)
-                    {
-                        string filename = Alphaleonis.Win32.Filesystem.Path.GetFileName(file);
-                        string desti = Alphaleonis.Win32.Filesystem.Path.Combine(dest, filename);
-                        Alphaleonis.Win32.Filesystem.File.Copy(file, desti, true);
-                    }
                 });
-                MessageBox.Show("Arquivos e pastas copiados com sucesso.");
+                MessageBox.Show("Backup finished");
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Erro ao copiar arquivos e pastas: {ex.Message}");
+                MessageBox.Show($"Error: {ex.Message}");
             }
             finally
             {
                 progressBar.Visible = false;
             }
         }
+        
     }
 }
