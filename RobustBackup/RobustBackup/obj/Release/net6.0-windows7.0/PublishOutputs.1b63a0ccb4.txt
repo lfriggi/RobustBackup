@@ -1,0 +1,6 @@
+D:\RobustBackup\RobustBackup\RobustBackup\bin\Release\net6.0-windows7.0\publish\RobustBackup.exe
+D:\RobustBackup\RobustBackup\RobustBackup\bin\Release\net6.0-windows7.0\publish\RobustBackup.dll
+D:\RobustBackup\RobustBackup\RobustBackup\bin\Release\net6.0-windows7.0\publish\RobustBackup.deps.json
+D:\RobustBackup\RobustBackup\RobustBackup\bin\Release\net6.0-windows7.0\publish\RobustBackup.runtimeconfig.json
+D:\RobustBackup\RobustBackup\RobustBackup\bin\Release\net6.0-windows7.0\publish\RobustBackup.pdb
+D:\RobustBackup\RobustBackup\RobustBackup\bin\Release\net6.0-windows7.0\publish\AlphaFS.dll

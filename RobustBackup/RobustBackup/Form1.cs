@@ -1,10 +1,3 @@
-using System;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Alphaleonis.Win32.Filesystem; // Alphaleonis namespace para operações de arquivos com caminhos longos
-using System.IO;
-
 namespace RobustBackup
 {
     public partial class Form1 : Form

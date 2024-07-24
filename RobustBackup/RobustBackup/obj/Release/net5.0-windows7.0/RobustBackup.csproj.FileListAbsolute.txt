@@ -1,0 +1,8 @@
+D:\RobustBackup\RobustBackup\RobustBackup\obj\Release\net5.0-windows7.0\RobustBackup.csproj.AssemblyReference.cache
+D:\RobustBackup\RobustBackup\RobustBackup\obj\Release\net5.0-windows7.0\RobustBackup.Form1.resources
+D:\RobustBackup\RobustBackup\RobustBackup\obj\Release\net5.0-windows7.0\RobustBackup.csproj.GenerateResource.cache
+D:\RobustBackup\RobustBackup\RobustBackup\obj\Release\net5.0-windows7.0\RobustBackup.GeneratedMSBuildEditorConfig.editorconfig
+D:\RobustBackup\RobustBackup\RobustBackup\obj\Release\net5.0-windows7.0\RobustBackup.AssemblyInfoInputs.cache
+D:\RobustBackup\RobustBackup\RobustBackup\obj\Release\net5.0-windows7.0\RobustBackup.AssemblyInfo.cs
+D:\RobustBackup\RobustBackup\RobustBackup\obj\Release\net5.0-windows7.0\RobustBackup.csproj.CoreCompileInputs.cache
+D:\RobustBackup\RobustBackup\RobustBackup\obj\Release\net5.0-windows7.0\RobustBackup.sourcelink.json
