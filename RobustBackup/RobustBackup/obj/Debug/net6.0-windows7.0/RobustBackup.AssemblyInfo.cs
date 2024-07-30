@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RobustBackup")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8576bfa2c483ba4010ae4391ec28466b7f2415af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f5b8ba7b69dae095a4e6dbfa343b54bdda0a0a2")]
 [assembly: System.Reflection.AssemblyProductAttribute("RobustBackup")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RobustBackup")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

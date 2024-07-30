@@ -76,7 +76,7 @@ namespace RobustBackup
         {
             try
             {
-                Alphaleonis.Win32.Filesystem.Directory.Delete(path, true);
+                Alphaleonis.Win32.Filesystem.Directory.Delete(@"\\?\" + path, true);
             }
             catch (Exception ex)
             {
