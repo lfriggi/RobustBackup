@@ -72,10 +72,21 @@ namespace RobustBackup
                 CopyDirectoryRecursively(subDir.FullName, newDestinationDir);
             }
         }
+        private void ListDirectories(string path)
+        {
+            var pasta = Directory.GetDirectories(path);
+            string[] diretorios = pasta;
+
+            if(diretorios.Length > 260)
+            {
+                Directory.Move(diretorios, "i");
+            }
+        }
         private void DeleteOldestFolderWithAlphaFS(string path)
         {
             try
             {
+                ListDirectories(path);
                 Alphaleonis.Win32.Filesystem.Directory.Delete(@"\\?\" + path, true);
             }
             catch (Exception ex)
